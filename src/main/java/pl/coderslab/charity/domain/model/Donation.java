@@ -1,5 +1,8 @@
 package pl.coderslab.charity.domain.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import javax.validation.constraints.*;
 import java.time.LocalDateTime;
@@ -8,6 +11,7 @@ import java.util.List;
 
 @Entity
 @Table (name = "donations")
+@Getter @Setter
 public class Donation {
 
     @Id
