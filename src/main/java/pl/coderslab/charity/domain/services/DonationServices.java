@@ -17,7 +17,7 @@ public class DonationServices {
         this.donationRepository = donationRepository;
     }
 
-    public Integer allDonationsNumber(){
+    public Integer allQuantity(){
         int sum = 0;
         List <Donation> donationList = donationRepository.findAll();
         for(Donation donation : donationList){
@@ -25,4 +25,10 @@ public class DonationServices {
         }
         return sum;
     }
+
+    public Integer allDonationNumber(){
+        return donationRepository.findAll().size();
+    }
+
+
 }

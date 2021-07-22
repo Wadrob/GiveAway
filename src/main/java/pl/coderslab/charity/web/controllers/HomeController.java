@@ -27,9 +27,14 @@ public class HomeController {
         return institutionService.allInstitutions();
     }
 
-    @ModelAttribute (name = "allDonations")
-    private Integer allDonationsNumber(){
-        return donationServices.allDonationsNumber();
+    @ModelAttribute (name = "allQuantity")
+    private Integer allQuantityNumber(){
+        return donationServices.allQuantity();
+    }
+
+    @ModelAttribute (name = "allDonationsNumber")
+    private Integer allDonationNUmber(){
+        return donationServices.allDonationNumber();
     }
 
     @RequestMapping("/")
