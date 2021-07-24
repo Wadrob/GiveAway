@@ -1,5 +1,6 @@
 package pl.coderslab.charity.domain.services;
 
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pl.coderslab.charity.domain.model.Donation;
@@ -9,13 +10,10 @@ import java.util.List;
 
 @Service
 @Transactional
+@AllArgsConstructor
 public class DonationServices {
 
     private final DonationRepository donationRepository;
-
-    public DonationServices(DonationRepository donationRepository) {
-        this.donationRepository = donationRepository;
-    }
 
     public Integer allQuantity(){
         int sum = 0;

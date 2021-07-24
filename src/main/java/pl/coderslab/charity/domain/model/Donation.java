@@ -2,10 +2,13 @@ package pl.coderslab.charity.domain.model;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,7 +38,10 @@ public class Donation {
     @Size(max = 6)
     private String zipCode;
     @NotNull
-    private LocalDateTime pickUpDateTime;
+    @DateTimeFormat (pattern = "yyyy-MM-dd")
+    private LocalDate pickUpDate;
+    @NotNull
+    private LocalTime pickUpTime;
     @Size (max = 300)
     private String pickUpComment;
 

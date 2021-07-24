@@ -1,5 +1,6 @@
 package pl.coderslab.charity.web.controllers;
 
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -12,15 +13,11 @@ import java.util.List;
 
 
 @Controller
+@AllArgsConstructor
 public class HomeController {
 
     private final InstitutionService institutionService;
     private final DonationServices donationServices;
-
-    public HomeController(InstitutionService institutionService, DonationServices donationServices) {
-        this.institutionService = institutionService;
-        this.donationServices = donationServices;
-    }
 
     @ModelAttribute
     private List <Institution> institutions (){
