@@ -163,7 +163,41 @@ document.addEventListener("DOMContentLoaded", function() {
       this.$stepInstructions[0].parentElement.parentElement.hidden = this.currentStep >= 5;
       this.$step.parentElement.hidden = this.currentStep >= 5;
 
-      // TODO: get data from inputs and show them in summary
+      let category=document.querySelector('#category-name').innerHTML;
+      let category_li=document.querySelector('#category-li');
+      category_li.innerHTML=category;
+
+      let quantity=document.querySelector('#input-quantity').value;
+      let quantity_li=document.querySelector('#quantity-li');
+      quantity_li.innerHTML=quantity;
+
+      let institution=document.querySelector('#institution-input-name').innerHTML;
+      let institution_li=document.querySelector('#institution-li');
+      institution_li.innerHTML=institution;
+
+      let street=document.querySelector('#input-street').value;
+      let street_li=document.querySelector('#street-li');
+      street_li.innerHTML=street;
+
+      let city=document.querySelector('#input-city').value;
+      let city_li=document.querySelector('#city-li');
+      city_li.innerHTML=city;
+
+      let zipcode=document.querySelector('#input-zipcode').value;
+      let zipcode_li=document.querySelector('#zipcode-li');
+      zipcode_li.innerHTML=zipcode;
+
+      let pickupdate=document.querySelector('#input-pickupdate').value;
+      let pickupdate_li=document.querySelector('#pickupdate-li');
+      pickupdate_li.innerHTML=pickupdate;
+
+      let pickuptime=document.querySelector('#input-pickuptime').value;
+      let pickuptime_li=document.querySelector('#pickuptime-li');
+      pickuptime_li.innerHTML=pickuptime;
+
+      let pickupcomment=document.querySelector('#input-pickupcomment').value;
+      let pickupcomment_li=document.querySelector('#pickupcomment-li');
+      pickupcomment_li.innerHTML=pickupcomment;
     }
 
   }
