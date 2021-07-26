@@ -30,7 +30,7 @@ public class HomeController {
     }
 
     @ModelAttribute (name = "allDonationsNumber")
-    private Integer allDonationNUmber(){
+    private Long allDonationNUmber(){
         return donationServices.allDonationNumber();
     }
 

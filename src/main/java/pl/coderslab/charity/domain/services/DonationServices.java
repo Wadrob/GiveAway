@@ -19,8 +19,8 @@ public class DonationServices {
         return donationRepository.allQuantity();
     }
 
-    public Integer allDonationNumber(){
-        return donationRepository.findAll().size();
+    public Long allDonationNumber(){
+        return donationRepository.count();
     }
 
 
