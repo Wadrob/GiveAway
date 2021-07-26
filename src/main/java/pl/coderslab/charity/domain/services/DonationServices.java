@@ -16,12 +16,7 @@ public class DonationServices {
     private final DonationRepository donationRepository;
 
     public Integer allQuantity(){
-        int sum = 0;
-        List <Donation> donationList = donationRepository.findAll();
-        for(Donation donation : donationList){
-            sum += donation.getQuantity();
-        }
-        return sum;
+        return donationRepository.allQuantity();
     }
 
     public Integer allDonationNumber(){
