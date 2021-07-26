@@ -26,6 +26,9 @@ public class HomeController {
 
     @ModelAttribute (name = "allQuantity")
     private Integer allQuantityNumber(){
+        if(donationServices.allQuantity() == null){
+            return 0;
+        }
         return donationServices.allQuantity();
     }
 
