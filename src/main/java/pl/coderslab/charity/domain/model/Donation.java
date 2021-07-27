@@ -26,7 +26,6 @@ public class Donation {
     @NotEmpty
     private List <Category> categories = new ArrayList<>();
     @ManyToOne
-    @NotEmpty
     private Institution institution;
     @NotEmpty @NotBlank
     @Size(max = 100, message = "Maksymalnie 100 znaków")

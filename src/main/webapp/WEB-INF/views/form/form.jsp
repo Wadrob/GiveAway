@@ -25,7 +25,7 @@
         </ul>
 
         <ul>
-            <li><a href="index.html" class="btn btn--without-border active">Start</a></li>
+            <li><a href="/" class="btn btn--without-border active">Start</a></li>
             <li><a href="index.html#steps" class="btn btn--without-border">O co chodzi?</a></li>
             <li><a href="index.html#about-us" class="btn btn--without-border">O nas</a></li>
             <li><a href="index.html#help" class="btn btn--without-border">Fundacje i organizacje</a></li>
@@ -91,9 +91,8 @@
                 <c:forEach items="${categories}" var="category">
                     <div class="form-group form-group--checkbox">
                         <label>
-                            <form:checkbox path="categories" value="${category}" cssClass="checkbox"/>
+                            <form:checkbox path="categories" value="${category}" cssClass="checkbox" id="check-option"/>
                             <label>
-                                <span class="checkbox"></span>
                                 <span class="description" id="category-name">${category.name}</span>
                             </label>
                         </label>
@@ -201,12 +200,17 @@
                         <ul>
                             <li>
                                 <span class="icon icon-bag"></span>
-                                <span class="summary--text" id="quantity_li"></span>
+                                <span class="summary--text" id="quantity-li"></span>
+                                <span class="summary--text">&nbsp;</span>
+                                <span class="summary--text">worków </span>
+                                <span class="summary--text">&nbsp;</span>
+                                <span class="summary--text" id="category-li"></span>
                             </li>
 
                             <li>
                                 <span class="icon icon-hand"></span>
                                 <span class="summary--text">Dla</span>
+                                <span class="summary--text">&nbsp;</span>
                                 <span class="summary--text" id="institution-li"></span>
                             </li>
                         </ul>

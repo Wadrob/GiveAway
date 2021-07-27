@@ -28,7 +28,8 @@ public class DonationController {
     }
 
     @PostMapping ("/donation/confirmation")
-    public String donationConfirmation (){
-        return "confirm";
+    public String donationConfirmation (Donation donation){
+        donationServices.saveDonation(donation);
+        return "form/form-confirmation";
     }
 }

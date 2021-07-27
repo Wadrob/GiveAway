@@ -23,5 +23,9 @@ public class DonationServices {
         return donationRepository.count();
     }
 
+    public void saveDonation(Donation donation){
+        donationRepository.save(donation);
+    }
+
 
 }
