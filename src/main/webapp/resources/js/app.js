@@ -163,9 +163,26 @@ document.addEventListener("DOMContentLoaded", function() {
       this.$stepInstructions[0].parentElement.parentElement.hidden = this.currentStep >= 5;
       this.$step.parentElement.hidden = this.currentStep >= 5;
 
-      let category=document.querySelector('#category-name').innerHTML;
+      let category_list = document.querySelectorAll("#check-option");
+      let category_checked_list = [];
+      category_list.forEach(function (item){
+        if (item.checked){
+          category_checked_list.push(item.nextElementSibling.nextElementSibling.firstElementChild.innerHTML);
+        }
+      })
+
+      let categories_names = '';
+      category_checked_list.forEach(function (item, index){
+        if (index !== category_checked_list.length-1){
+          categories_names += item + ", ";
+        }
+        else {
+          categories_names += item;
+        }
+      })
+
       let category_li=document.querySelector('#category-li');
-      category_li.innerHTML=category;
+      category_li.innerHTML=categories_names;
 
       let quantity=document.querySelector('#input-quantity').value;
       let quantity_li=document.querySelector('#quantity-li');

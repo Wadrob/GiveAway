@@ -89,7 +89,7 @@
                 <h3>Zaznacz co chcesz oddać:</h3>
 
                 <c:forEach items="${categories}" var="category">
-                    <div class="form-group form-group--checkbox">
+                    <div class="">
                         <label>
                             <form:checkbox path="categories" value="${category}" cssClass="checkbox" id="check-option"/>
                             <label>

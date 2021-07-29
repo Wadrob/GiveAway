@@ -22,7 +22,7 @@ public class Donation {
     private Long id;
     @Min(1) @Max(100)
     private Integer quantity;
-    @OneToMany
+    @ManyToMany
     @NotEmpty
     private List <Category> categories = new ArrayList<>();
     @ManyToOne
