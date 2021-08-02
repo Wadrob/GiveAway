@@ -6,8 +6,6 @@ import org.springframework.transaction.annotation.Transactional;
 import pl.coderslab.charity.domain.model.Donation;
 import pl.coderslab.charity.domain.repository.DonationRepository;
 
-import java.util.List;
-
 @Service
 @Transactional
 @AllArgsConstructor
