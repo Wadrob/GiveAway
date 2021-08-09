@@ -1,6 +1,6 @@
 Project created for Portfolio Lab
 
-It's a Java programme for fictional charity projectwith form animated by JavaScript. 
+It's a Java programme for a fictional charity project with a form animated by JavaScript.
 
 Programme mainly uses:
 - JavaScript
@@ -8,4 +8,4 @@ Programme mainly uses:
 - Spring Hibernate
 - Spring MVC in jsp format
 
-App can have future developments with Spring Security to add user login and registration.
+The App can have future updates with Spring Security to add user login and registration.
