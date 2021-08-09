@@ -1,6 +1,6 @@
 Project created for Portfolio Lab
 
-It's a Java programme for charity with form animated by JavaScript. 
+It's a Java programme for fictional charity projectwith form animated by JavaScript. 
 
 Programme mainly uses:
 - JavaScript
